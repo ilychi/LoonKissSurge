@@ -1,11 +1,11 @@
 #!name=可莉广告过滤器
 #!desc=可莉自用的广告过滤器
-#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+#!author=可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png
 #!category=iKeLee
 #!tag=去广告
 #!loon_version=3.2.1(749)
-#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
+#!homepage=https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md
 #!date=2024-08-14 21:37:06
 
 [Rule]
