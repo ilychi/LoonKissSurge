@@ -3,6 +3,7 @@
 ## 重要提醒
 
 本仓库为自用实验性项目，敬请仅参考实现方式，不提供可用性承诺。
+由于本项目使用自动化转换方案，各家代理APP基本实现亦有所不同，不保证完全可用性和兼容性。
 
 ## 用途
 
@@ -18,6 +19,8 @@
 
 ## 特别鸣谢
 
-[可莉]: https://github.com/luestr
-[ScriptHub项目]: https://github.com/Script-Hub-Org/Script-Hub
-[小一]: https://github.com/xream
+[可莉](https://github.com/luestr)
+
+[ScriptHub](https://github.com/Script-Hub-Org/Script-Hub)
+
+[小一](https://github.com/xream)
