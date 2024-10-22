@@ -2,6 +2,7 @@
 #!desc=移除开屏广告、各类广告横幅、各类信息流广告、各类弹窗推广、各类浮窗、我的页面广告。
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AutoHome.png
+#!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id385919493
 #!tag=去广告
 #!loon_version=3.2.1(749)
@@ -10,10 +11,10 @@
 
 [Rule]
 # 拦截HTTPDNS
-IP-CIDR,119.29.29.98/32,REJECT,no-resolve
-IP-CIDR,119.29.29.99/32,REJECT,no-resolve
+IP-CIDR,119.29.29.98/32,REJECT,no-resolve,pre-matching
+IP-CIDR,119.29.29.99/32,REJECT,no-resolve,pre-matching
 URL-REGEX,^http:\/\/182\.254\.116\.116\/d,REJECT
-DOMAIN,adproxy.autohome.com.cn,REJECT
+DOMAIN,adproxy.autohome.com.cn,REJECT,pre-matching
 
 [Map Local]
 # 我的页面 - 广告横幅

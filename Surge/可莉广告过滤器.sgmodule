@@ -2,6 +2,7 @@
 #!desc=可莉自用的广告过滤器
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/KeLee.png
+#!category=iKeLee
 #!tag=去广告
 #!loon_version=3.2.1(749)
 #!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
@@ -9,39 +10,39 @@
 
 [Rule]
 # Outlook
-DOMAIN,acdn.adnxs.com,REJECT
-DOMAIN,mediation.adnxs.com,REJECT
-DOMAIN,sin3-ib.adnxs.com,REJECT
+DOMAIN,acdn.adnxs.com,REJECT,pre-matching
+DOMAIN,mediation.adnxs.com,REJECT,pre-matching
+DOMAIN,sin3-ib.adnxs.com,REJECT,pre-matching
 # 小米
-DOMAIN,sdkconfig.ad.xiaomi.com,REJECT
-DOMAIN,data.mistat.xiaomi.com,REJECT
-DOMAIN,tracking.intl.miui.com,REJECT
+DOMAIN,sdkconfig.ad.xiaomi.com,REJECT,pre-matching
+DOMAIN,data.mistat.xiaomi.com,REJECT,pre-matching
+DOMAIN,tracking.intl.miui.com,REJECT,pre-matching
 # 米家
-DOMAIN,sdkconfig.ad.xiaomi.com,REJECT
+DOMAIN,sdkconfig.ad.xiaomi.com,REJECT,pre-matching
 # 通用广告
-DOMAIN-SUFFIX,doubleclick-cn.net,REJECT
-DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN-SUFFIX,doubleclick-cn.net,REJECT,pre-matching
+DOMAIN-SUFFIX,doubleclick.net,REJECT,pre-matching
 # 虎牙直播开屏广告
-DOMAIN,business.msstatic.com,REJECT
-DOMAIN-SUFFIX,v1d.szbdyd.com,REJECT
+DOMAIN,business.msstatic.com,REJECT,pre-matching
+DOMAIN-SUFFIX,v1d.szbdyd.com,REJECT,pre-matching
 URL-REGEX,^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$,REJECT
 # 中国联通
-DOMAIN-SUFFIX,m1.ad.10010.com,REJECT
+DOMAIN-SUFFIX,m1.ad.10010.com,REJECT,pre-matching
 # 中国电信
-DOMAIN,ad.21cn.com,REJECT
-DOMAIN,ad.k.21cn.com,REJECT
-DOMAIN,admarket.21cn.com,REJECT
-DOMAIN,adshows.21cn.com,REJECT
-IP-CIDR,122.229.8.47/32,REJECT,no-resolve
-IP-CIDR,122.229.29.89/32,REJECT,no-resolve
+DOMAIN,ad.21cn.com,REJECT,pre-matching
+DOMAIN,ad.k.21cn.com,REJECT,pre-matching
+DOMAIN,admarket.21cn.com,REJECT,pre-matching
+DOMAIN,adshows.21cn.com,REJECT,pre-matching
+IP-CIDR,122.229.8.47/32,REJECT,no-resolve,pre-matching
+IP-CIDR,122.229.29.89/32,REJECT,no-resolve,pre-matching
 # 快递100
 URL-REGEX,^http:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do,REJECT-TINYGIF
 URL-REGEX,^http:\/\/p\.kuaidi100\.com\/advertisement\/,REJECT-TINYGIF
 # 亲邻开门
-DOMAIN,mall-dsp2.qinlinkeji.com,REJECT
-DOMAIN,mallapi2.qinlinkeji.com,REJECT
+DOMAIN,mall-dsp2.qinlinkeji.com,REJECT,pre-matching
+DOMAIN,mallapi2.qinlinkeji.com,REJECT,pre-matching
 # Pixiv - 作品底部广告
-DOMAIN,open-pixon.ads-pixiv.net,REJECT
+DOMAIN,open-pixon.ads-pixiv.net,REJECT,pre-matching
 
 [URL Rewrite]
 # 摩托范弹窗广告

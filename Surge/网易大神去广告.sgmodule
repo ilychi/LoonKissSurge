@@ -2,6 +2,7 @@
 #!desc=移除开屏广告，精简我的页面。
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/NetEaseGodlike.png
+#!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id1359055423
 #!tag=去广告
 #!loon_version=3.2.1(749)
@@ -10,16 +11,16 @@
 
 [Rule]
 # 拦截HTTPDNS
-DOMAIN,httpdns.music.163.com,REJECT
-DOMAIN,httpdns.n.netease.com,REJECT
-DOMAIN,httpdns-sdk.n.netease.com,REJECT
-DOMAIN,httpdns.yunxindns.com,REJECT
-DOMAIN,lofter.httpdns.c.163.com,REJECT
-DOMAIN,music.httpdns.c.163.com,REJECT
-IP-CIDR,59.111.239.61/32,REJECT,no-resolve
-IP-CIDR,59.111.239.62/32,REJECT,no-resolve
-IP-CIDR,115.236.121.51/32,REJECT,no-resolve
-IP-CIDR,115.236.121.195/32,REJECT,no-resolve
+DOMAIN,httpdns.music.163.com,REJECT,pre-matching
+DOMAIN,httpdns.n.netease.com,REJECT,pre-matching
+DOMAIN,httpdns-sdk.n.netease.com,REJECT,pre-matching
+DOMAIN,httpdns.yunxindns.com,REJECT,pre-matching
+DOMAIN,lofter.httpdns.c.163.com,REJECT,pre-matching
+DOMAIN,music.httpdns.c.163.com,REJECT,pre-matching
+IP-CIDR,59.111.239.61/32,REJECT,no-resolve,pre-matching
+IP-CIDR,59.111.239.62/32,REJECT,no-resolve,pre-matching
+IP-CIDR,115.236.121.51/32,REJECT,no-resolve,pre-matching
+IP-CIDR,115.236.121.195/32,REJECT,no-resolve,pre-matching
 
 [URL Rewrite]
 # 广告下发

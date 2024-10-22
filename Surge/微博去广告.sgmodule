@@ -2,6 +2,7 @@
 #!desc=过滤微博广告及去除各部分推广模块
 #!author=RuCu6[https://github.com/RuCu6], zmqcherish[https://github.com/zmqcherish]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weibo.png
+#!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id350962117
 #!tag=去广告
 #!loon_version=3.2.1(749)
@@ -12,11 +13,11 @@
 # 请求放行
 DOMAIN,wbapp.uve.weibo.com,DIRECT
 # 微博开屏广告
-DOMAIN-SUFFIX,biz.weibo.com,REJECT
+DOMAIN-SUFFIX,biz.weibo.com,REJECT,pre-matching
 # 拦截HTTPDNS
-DOMAIN,dns.weibo.cn,REJECT
-IP-CIDR,39.97.130.51/32,REJECT,no-resolve
-IP-CIDR,39.97.128.148/32,REJECT,no-resolve
+DOMAIN,dns.weibo.cn,REJECT,pre-matching
+IP-CIDR,39.97.130.51/32,REJECT,no-resolve,pre-matching
+IP-CIDR,39.97.128.148/32,REJECT,no-resolve,pre-matching
 URL-REGEX,^http:\/\/api\.weibo\.cn\/2\/httpdns\/config,REJECT
 URL-REGEX,^http:\/\/api\.weibo\.cn\/httpdns\/config,REJECT
 

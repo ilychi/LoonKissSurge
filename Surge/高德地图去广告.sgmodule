@@ -2,6 +2,7 @@
 #!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。
 #!author=RuCu6[https://github.com/RuCu6], kokoryh[https://github.com/kokoryh]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png
+#!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id461703208
 #!tag=去广告
 #!loon_version=3.2.1(749)
@@ -10,9 +11,9 @@
 
 [Rule]
 AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, AMapiPhone*)), REJECT
-DOMAIN,amap-aos-info-nogw.amap.com,REJECT
-DOMAIN,free-aos-cdn-image.amap.com,REJECT
-DOMAIN-SUFFIX,v.smtcdns.com,REJECT
+DOMAIN,amap-aos-info-nogw.amap.com,REJECT,pre-matching
+DOMAIN,free-aos-cdn-image.amap.com,REJECT,pre-matching
+DOMAIN-SUFFIX,v.smtcdns.com,REJECT,pre-matching
 
 [Map Local]
 # 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页

@@ -2,6 +2,7 @@
 #!desc=移除开屏广告、应用各类弹窗、各类横幅广告、评论区广告和播放器界面广告。
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KuGou.png
+#!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id472208016
 #!tag=去广告
 #!loon_version=3.2.1(749)
@@ -9,21 +10,21 @@
 #!date=2024-07-25 00:46:39
 
 [Rule]
-DOMAIN,ads.service.kugou.com,REJECT
-DOMAIN,adstats.tencentmusic.com,REJECT
-DOMAIN,adsmind.gdtimg.com,REJECT
-DOMAIN,adserviceretry.kugou.com,REJECT
-DOMAIN,adserviceretry.kglink.cn,REJECT
-DOMAIN,ad.tencentmusic.com,REJECT
-DOMAIN,adservice.kugou.com,REJECT
-DOMAIN,splashimgretrybssdl.cloud.kugou.com,REJECT
+DOMAIN,ads.service.kugou.com,REJECT,pre-matching
+DOMAIN,adstats.tencentmusic.com,REJECT,pre-matching
+DOMAIN,adsmind.gdtimg.com,REJECT,pre-matching
+DOMAIN,adserviceretry.kugou.com,REJECT,pre-matching
+DOMAIN,adserviceretry.kglink.cn,REJECT,pre-matching
+DOMAIN,ad.tencentmusic.com,REJECT,pre-matching
+DOMAIN,adservice.kugou.com,REJECT,pre-matching
+DOMAIN,splashimgretrybssdl.cloud.kugou.com,REJECT,pre-matching
 # 腾讯优量汇 - 广告服务商
-DOMAIN,ios.bugly.qq.com,REJECT
-DOMAIN,sdk.e.qq.com,REJECT
-DOMAIN,us.l.qq.com,REJECT
-DOMAIN-SUFFIX,ugdtimg.com,REJECT
+DOMAIN,ios.bugly.qq.com,REJECT,pre-matching
+DOMAIN,sdk.e.qq.com,REJECT,pre-matching
+DOMAIN,us.l.qq.com,REJECT,pre-matching
+DOMAIN-SUFFIX,ugdtimg.com,REJECT,pre-matching
 # DOMAIN, qzs.gdtimg.com, REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT,pre-matching
 # c2.gdt.qq.com, REJECT
 URL-REGEX,^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html,REJECT
 

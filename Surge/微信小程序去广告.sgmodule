@@ -2,6 +2,7 @@
 #!desc=收录常用小程序的去广告，作者署名在插件内。
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WeixinMiniPrograms.png
+#!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id414478124
 #!tag=去广告
 #!loon_version=3.2.1(749)
@@ -10,15 +11,15 @@
 
 [Rule]
 # 微信小程序通用规则
-DOMAIN,wxsnsdy.wxs.qq.com,REJECT
-DOMAIN,wxsmsdy.video.qq.com,REJECT
-DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
+DOMAIN,wxsnsdy.wxs.qq.com,REJECT,pre-matching
+DOMAIN,wxsmsdy.video.qq.com,REJECT,pre-matching
+DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT,pre-matching
 # 收钱吧广告
-DOMAIN,ads-shopping.shouqianba.com,REJECT
+DOMAIN,ads-shopping.shouqianba.com,REJECT,pre-matching
 # 猫眼电影
-DOMAIN,ad.maoyan.com,REJECT
+DOMAIN,ad.maoyan.com,REJECT,pre-matching
 # 捷停车 @怎么肥事
-DOMAIN,e.jparking.cn,REJECT
+DOMAIN,e.jparking.cn,REJECT,pre-matching
 
 [URL Rewrite]
 ^https:\/\/webapi\.qmai\.cn\/web\/cmk-center\/marketing\/canvas\/advert-reach - reject

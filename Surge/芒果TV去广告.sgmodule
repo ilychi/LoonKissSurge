@@ -2,6 +2,7 @@
 #!desc=过滤芒果TV客户端广告
 #!author=RuCu6[https://github.com/RuCu6]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Mango_TV.png
+#!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id629774477
 #!tag=去广告
 #!loon_version=3.2.1(749)
@@ -9,19 +10,19 @@
 #!date=2024-07-23 17:17:38
 
 [Rule]
-DOMAIN,credits.bz.mgtv.com,REJECT
-DOMAIN,credits2.bz.mgtv.com,REJECT
-DOMAIN,credits3.bz.mgtv.com,REJECT
-DOMAIN,dflow.bz.mgtv.com,REJECT
-DOMAIN,encounter.bz.mgtv.com,REJECT
-DOMAIN,floor.bz.mgtv.com,REJECT
-DOMAIN,layer.bz.mgtv.com,REJECT
-DOMAIN,mob.bz.mgtv.com,REJECT
-DOMAIN,rc-topic-api.bz.mgtv.com,REJECT
-DOMAIN,rprain.bz.mgtv.com,REJECT
-DOMAIN,rprain.log.mgtv.com,REJECT
-DOMAIN,vip.bz.mgtv.com,REJECT
-DOMAIN-SUFFIX,da.mgtv.com,REJECT
+DOMAIN,credits.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,credits2.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,credits3.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,dflow.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,encounter.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,floor.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,layer.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,mob.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,rc-topic-api.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,rprain.bz.mgtv.com,REJECT,pre-matching
+DOMAIN,rprain.log.mgtv.com,REJECT,pre-matching
+DOMAIN,vip.bz.mgtv.com,REJECT,pre-matching
+DOMAIN-SUFFIX,da.mgtv.com,REJECT,pre-matching
 # 无用请求
 URL-REGEX,^http:\/\/[\d\.]+:\d{5}\/\?cmd=indexes,REJECT
 # 首页左上角推广

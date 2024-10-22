@@ -2,6 +2,7 @@
 #!desc=移除开屏、首页视频流、首页轮播图广告，移除直播间悬浮窗。
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Douyu.png
+#!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id863882795
 #!tag=去广告
 #!loon_version=3.2.1(749)
@@ -13,11 +14,11 @@
 URL-REGEX,^http:\/\/203\.107\.1\.33\/\d+\/ss,REJECT
 URL-REGEX,^http:\/\/203\.107\.1\.34\/\d+\/ss,REJECT
 URL-REGEX,^http:\/\/linkmicschedule\.douyucdn\.cn\/im_schedule\/im_gate_list,REJECT
-IP-CIDR,119.29.29.98/32,REJECT,no-resolve
-IP-CIDR,119.29.29.99/32,REJECT,no-resolve
+IP-CIDR,119.29.29.98/32,REJECT,no-resolve,pre-matching
+IP-CIDR,119.29.29.99/32,REJECT,no-resolve,pre-matching
 AND, ((DEST-PORT, 18000), (PROTOCOL, STUN)), REJECT
-DOMAIN,stun1.douyucdn.cn,REJECT
-DOMAIN,stun1.qvb.qcloud.com,REJECT
+DOMAIN,stun1.douyucdn.cn,REJECT,pre-matching
+DOMAIN,stun1.qvb.qcloud.com,REJECT,pre-matching
 
 [URL Rewrite]
 # 请求重定向
