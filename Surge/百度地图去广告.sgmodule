@@ -11,7 +11,7 @@
 
 [Rule]
 # 拦截HTTPDNS
-DOMAIN,httpdns.baidubce.com,REJECT,pre-matching
+DOMAIN,httpdns.baidubce.com,REJECT,extended-matching,pre-matching
 IP-CIDR,186.76.76.200/32,REJECT,no-resolve,pre-matching
 
 [Map Local]

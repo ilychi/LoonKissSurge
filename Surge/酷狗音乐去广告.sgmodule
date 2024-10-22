@@ -10,23 +10,23 @@
 #!date=2024-07-25 00:46:39
 
 [Rule]
-DOMAIN,ads.service.kugou.com,REJECT,pre-matching
-DOMAIN,adstats.tencentmusic.com,REJECT,pre-matching
-DOMAIN,adsmind.gdtimg.com,REJECT,pre-matching
-DOMAIN,adserviceretry.kugou.com,REJECT,pre-matching
-DOMAIN,adserviceretry.kglink.cn,REJECT,pre-matching
-DOMAIN,ad.tencentmusic.com,REJECT,pre-matching
-DOMAIN,adservice.kugou.com,REJECT,pre-matching
-DOMAIN,splashimgretrybssdl.cloud.kugou.com,REJECT,pre-matching
+DOMAIN,ads.service.kugou.com,REJECT,extended-matching,pre-matching
+DOMAIN,adstats.tencentmusic.com,REJECT,extended-matching,pre-matching
+DOMAIN,adsmind.gdtimg.com,REJECT,extended-matching,pre-matching
+DOMAIN,adserviceretry.kugou.com,REJECT,extended-matching,pre-matching
+DOMAIN,adserviceretry.kglink.cn,REJECT,extended-matching,pre-matching
+DOMAIN,ad.tencentmusic.com,REJECT,extended-matching,pre-matching
+DOMAIN,adservice.kugou.com,REJECT,extended-matching,pre-matching
+DOMAIN,splashimgretrybssdl.cloud.kugou.com,REJECT,extended-matching,pre-matching
 # 腾讯优量汇 - 广告服务商
-DOMAIN,ios.bugly.qq.com,REJECT,pre-matching
-DOMAIN,sdk.e.qq.com,REJECT,pre-matching
-DOMAIN,us.l.qq.com,REJECT,pre-matching
-DOMAIN-SUFFIX,ugdtimg.com,REJECT,pre-matching
+DOMAIN,ios.bugly.qq.com,REJECT,extended-matching,pre-matching
+DOMAIN,sdk.e.qq.com,REJECT,extended-matching,pre-matching
+DOMAIN,us.l.qq.com,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,ugdtimg.com,REJECT,extended-matching,pre-matching
 # DOMAIN, qzs.gdtimg.com, REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT,pre-matching
+DOMAIN-SUFFIX,gdt.qq.com,REJECT,extended-matching,pre-matching
 # c2.gdt.qq.com, REJECT
-URL-REGEX,^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html,REJECT
+URL-REGEX,^http:\/\/log\.stat\.kugou\.com\/mobile\/ad\.html,REJECT,extended-matching
 
 [Map Local]
 # 广告配置

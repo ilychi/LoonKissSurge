@@ -11,10 +11,10 @@
 
 [Rule]
 # 拦截HTTPDNS
-DOMAIN,httpdns.n.netease.com,REJECT,pre-matching
-DOMAIN,httpdns.calorietech.com,REJECT,pre-matching
+DOMAIN,httpdns.n.netease.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdns.calorietech.com,REJECT,extended-matching,pre-matching
 # 拦截广告下发
-DOMAIN,hc-ssp.sm.cn,REJECT,pre-matching
+DOMAIN,hc-ssp.sm.cn,REJECT,extended-matching,pre-matching
 
 [Map Local]
 # 搜索填充词

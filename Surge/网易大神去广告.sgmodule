@@ -11,12 +11,12 @@
 
 [Rule]
 # 拦截HTTPDNS
-DOMAIN,httpdns.music.163.com,REJECT,pre-matching
-DOMAIN,httpdns.n.netease.com,REJECT,pre-matching
-DOMAIN,httpdns-sdk.n.netease.com,REJECT,pre-matching
-DOMAIN,httpdns.yunxindns.com,REJECT,pre-matching
-DOMAIN,lofter.httpdns.c.163.com,REJECT,pre-matching
-DOMAIN,music.httpdns.c.163.com,REJECT,pre-matching
+DOMAIN,httpdns.music.163.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdns.n.netease.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdns-sdk.n.netease.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdns.yunxindns.com,REJECT,extended-matching,pre-matching
+DOMAIN,lofter.httpdns.c.163.com,REJECT,extended-matching,pre-matching
+DOMAIN,music.httpdns.c.163.com,REJECT,extended-matching,pre-matching
 IP-CIDR,59.111.239.61/32,REJECT,no-resolve,pre-matching
 IP-CIDR,59.111.239.62/32,REJECT,no-resolve,pre-matching
 IP-CIDR,115.236.121.51/32,REJECT,no-resolve,pre-matching
