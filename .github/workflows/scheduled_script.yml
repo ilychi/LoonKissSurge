@@ -46,7 +46,7 @@ jobs:
 
     - name: Check Docker logs for issues
       # 检查容器内的服务日志，确保服务启动成功
-      run: docker logs $(docker ps -q --filter ancestor=qingrex/scripthub:latest)
+      run: docker logs $(docker ps -q --filter ancestor=xream/script-hub:latest)
 
     - name: Run Python script
       run: |
