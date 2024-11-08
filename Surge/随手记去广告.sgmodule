@@ -1,12 +1,12 @@
 #!name=随手记去广告
 #!desc=移除开屏广告、神象云账本内部广告、我的页面广告，移除社区入口。
-#!author=可莉🅥[https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md]
+#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/KingdeeMyMoney.png
 #!category=iKeLee
 #!openUrl=https://apps.apple.com/app/id372353614
 #!tag=去广告
 #!loon_version=3.2.1(749)
-#!homepage=https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!date=2024-07-12 02:09:16
 
 [URL Rewrite]

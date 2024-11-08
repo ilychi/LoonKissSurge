@@ -7,12 +7,12 @@
 #!tag=去广告
 #!system_version=15
 #!loon_version=3.2.1(749)
-#!homepage=https://gitlab.com/lodepuly/ProxyResource-/blob/main/README.md
+#!homepage=https://github.com/luestr/ProxyResource/blob/main/README.md
 #!date=2024-06-11 21:59:22
 
 [Rule]
-AND, ((DOMAIN-SUFFIX, googlevideo.com,extended-matching),  (PROTOCOL, QUIC)), REJECT
-AND, ((DOMAIN-SUFFIX, youtubei.googleapis.com,extended-matching),  (PROTOCOL, QUIC)), REJECT
+AND,((DOMAIN-SUFFIX,googlevideo.com,extended-matching),(PROTOCOL,QUIC)),REJECT
+AND,((DOMAIN-SUFFIX,youtubei.googleapis.com,extended-matching),(PROTOCOL,QUIC)),REJECT
 
 [Map Local]
 # 使用reject-dict方法以减少开销
